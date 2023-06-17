@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="331.0" prefWidth="567.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.school_project.Login">
+   <children>
+      <Pane prefHeight="331.0" prefWidth="265.0" style="-fx-background-color: #960018;">
+         <children>
+            <Label layoutX="17.0" layoutY="189.0" text="AL MISBAAX" textFill="WHITE">
+               <font>
+                  <Font name="Symbol" size="42.0" />
+               </font>
+            </Label>
+            <Label layoutX="65.0" layoutY="245.0" text="School" textFill="WHITE">
+               <font>
+                  <Font name="Symbol" size="42.0" />
+               </font>
+            </Label>
+            <FontAwesomeIcon fill="WHITE" glyphName="HOME" layoutX="61.0" layoutY="129.0" size="150" />
+            <Separator layoutY="150.0" prefHeight="24.0" prefWidth="265.0" />
+         </children>
+      </Pane>
+      <TextField fx:id="txtUsername" layoutX="360.0" layoutY="80.0" prefHeight="34.0" prefWidth="200.0" promptText="Username" style="-fx-background-radius: 15;" />
+      <TextField fx:id="txtPassword" layoutX="360.0" layoutY="135.0" prefHeight="34.0" prefWidth="200.0" promptText="Password" style="-fx-background-radius: 15;" />
+      <FontAwesomeIcon fill="#960018" glyphName="USER" layoutX="315.0" layoutY="113.0" size="40" text="" />
+      <FontAwesomeIcon fill="#960018" glyphName="KEY" layoutX="315.0" layoutY="170.0" size="40" />
+      <Button layoutX="387.0" layoutY="192.0" mnemonicParsing="false" onAction="#loginHandler" prefHeight="38.0" prefWidth="118.0" style="-fx-background-color: #960018; -fx-background-radius: 25;" text="Login" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+         <graphic>
+            <FontAwesomeIcon fill="WHITE" glyphName="ARROW_RIGHT" size="20" />
+         </graphic>
+      </Button>
+      <Label fx:id="lblOutput" layoutX="282.0" layoutY="294.0" prefHeight="34.0" prefWidth="254.0" textFill="#960018">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="320.0" layoutY="6.0" text="Login Form" textFill="#960018">
+         <font>
+            <Font size="42.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

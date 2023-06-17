@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.school_project.view">
+   <children>
+      <Pane prefHeight="66.0" prefWidth="600.0" style="-fx-background-color: #960018;">
+         <children>
+            <Label layoutX="120.0" layoutY="8.0" text="View All The Students" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="35.0" />
+               </font>
+               <graphic>
+                  <FontAwesomeIcon fill="WHITE" glyphName="USERS" size="40" />
+               </graphic>
+            </Label>
+            <FontAwesomeIcon fill="WHITE" glyphName="ARROW_LEFT" layoutX="13.0" layoutY="42.0" onMouseClicked="#bHndlr" size="30" />
+         </children>
+      </Pane>
+      <TableView fx:id="tblView" layoutX="14.0" layoutY="76.0" prefHeight="318.0" prefWidth="579.0">
+        <columns>
+          <TableColumn fx:id="columnId" prefWidth="75.0" text="ID" />
+          <TableColumn fx:id="columnName" prefWidth="75.0" text="NAME" />
+        </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </TableView>
+   </children>
+</AnchorPane>
