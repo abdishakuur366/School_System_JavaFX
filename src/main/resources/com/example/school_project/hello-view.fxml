@@ -61,9 +61,9 @@
             <Font name="Berlin Sans FB" size="17.0" />
          </font>
       </Label>
-      <ImageView fitHeight="272.0" fitWidth="313.0" layoutX="254.0" layoutY="115.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="260.0" fitWidth="394.0" layoutX="201.0" layoutY="116.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="C:\Users\Abdishakuur Hassan\IdeaProjects\School_Project\src\images\d.PNG" />
+            <Image url="C:\Users\Abdishakuur Hassan\IdeaProjects\School_Project\src\images\arday.jpg" />
          </image>
       </ImageView>
       <Pane layoutX="188.0" layoutY="394.0" prefHeight="20.0" prefWidth="416.0" style="-fx-background-color: #960018;">
